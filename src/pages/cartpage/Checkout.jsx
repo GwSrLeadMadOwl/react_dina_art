@@ -1,5 +1,6 @@
 import "./checkout.scss";
 import ShoppingItem from "../../components/shopping-item/shopping-item.jsx";
+import StripeCheckoutButton from "../../components/stripe-button/stripe-button";
 import { connect } from "react-redux";
 import { useState, useEffect } from "react";
 
@@ -24,7 +25,12 @@ const Checkout = ({ cartItems }) => {
                     <div className="bg-line" />
                     <div className="purchase-section">
                         <p>Total: {price} €</p>
-                        <button type="button" name="button" className="purchase">Pay with <span className="inverted">💳</span></button>
+                        <StripeCheckoutButton price={price} cartItems={cartItems} />
+                    </div>
+                    <div className="test-warning">
+                        *Please use the following test credit card for payments*
+                    <br />
+                        4242 4242 4242 4242 - EXp: 1/25 - CVV: 123
                     </div>
                 </div>
             </div>
