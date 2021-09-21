@@ -12,8 +12,11 @@ $textColorDarkMode: #b3b3b3;
 }
 // THAT BITCH DON'T WANT TO WORK FAST!!!
 html{
-    background-color: $bgColor;
+    background: $bgColor;
     transition: filter .3s ease, background-color .3s ease;
+}
+html.dark-mode{
+    background-color: black;
 }
 body{
     padding: 0 300px;

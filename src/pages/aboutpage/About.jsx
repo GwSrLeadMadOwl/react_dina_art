@@ -9,9 +9,9 @@ export default function About() {
                     <img className="dina inverted" src={process.env.PUBLIC_URL + "/img/dina.jpg"} alt="" />
                     <div className="social">
                         <a href="https://www.facebook.com/dinacanvasart"><img className="s_logo" src="/img/social/facebook.png"
-                            alt="" /></a>
-                        <a href=""><img className="s_logo" src="/img/social/instagram.png" alt="" /></a>
-                        <a href=""><img className="s_logo" src="/img/social/gmail.png" alt="" /></a>
+                            alt="fb" /></a>
+                        <a href=""><img className="s_logo" src="/img/social/instagram.png" alt="ins" /></a>
+                        <a href=""><img className="s_logo" src="/img/social/gmail.png" alt="gmail" /></a>
                     </div>
                 </div>
                 <div>
